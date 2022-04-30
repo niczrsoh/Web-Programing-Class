@@ -1,0 +1,81 @@
+<!--
+    There are two methods for creating a grid : 
+    1. Using line number 
+    2. Using area name
+-->
+<html>
+    <head>
+        <title>
+            Using two methods for creating a grid
+        </title>
+        <style type="text/css">
+            #grid{
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+                grid-template-rows: repeat(5,1fr);
+            
+       
+                 /*METHOD 2: USING AREA NAME*/
+                grid-template-areas:
+                "header header header header header "
+                "sidebar sidebar main main main"
+                "sidebar sidebar main main main"
+                "sidebar sidebar main main main"
+                "footer footer footer footer footer"
+            }
+            /*METHOD 1: USING LINE NUMBER*/
+            /*1.1 using normal method*/
+            #header1{
+                border: 1px solid;
+                text-align: center;
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            #sidebar{
+                border: 1px solid;
+                
+                text-align: center;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 5;
+                place-items: center;
+                
+            }
+            #main{
+                border: 1px solid;
+                text-align: center;
+                grid-column-start: 3;
+                grid-column-end: 6;
+                grid-row-start: 2;
+                grid-row-end: 5;
+            }
+            #footer{
+                border: 1px solid;
+                text-align: center;
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 5;
+                grid-row-end: 6;
+            }
+            /*1.2 using shorthand properties*/
+            #header2{
+                /* row-start/col-start/row-end/col-end */
+                text-align: center;
+                grid: 1/1/2/6
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+   <div id="grid">
+      <div id="header1">Header</div>
+      <div id="sidebar">Sidebar</div>
+      <div id="main">Main</div>
+      <div id="footer">Footer</div>
+   </div>
+    </body>
+</html>

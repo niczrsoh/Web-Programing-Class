@@ -1,0 +1,71 @@
+<!--
+    This file includes the basic use of css, multi class selector (one class with diff )
+-->
+<html>
+    <head>
+        <title>Class Selectors</title>
+        <style type="text/css">
+            p.normal{font-family:Arial; font-size:36px; color:#FF0000} 
+            p.italic{font-family:Arial; font-size:24px; font-style:italic} 
+            /*Multi class selector*/
+            p.large{font-size: 50px;}
+            p.center{text-align:center;}
+            /*Generic selector*/
+            .headline {font-family:Arial;font-size:14px;color:blue;}
+            /*Grouping selector*/
+            .sublines,.infotext ,.headlines {font-family:arial;color:black;background:yellow;}
+            .headlines{font-size:14pt;}
+            .sublines{font-size:12pt;}
+            .infotext{font-size:10pt;}
+            /*Context dependent selectors (b must under p only can function)*/
+            p b{color:red; text-decoration:underline;}
+            /*pseudo-class selector*/
+            /*Can style differently depends on what state they are in*/ 
+            a:link{ 
+                /* unvisited link */
+                font-weight:bold;  
+                color: blue;  
+            }
+            
+            a:visited{/*a link user has visited*/
+                text-decoration: underline;
+                color:green;
+            }
+            /*hover can only come after a:link and a:visited*/
+            a:hover{ 
+                /* when user mouses over it */
+                color:yellow;  
+                text-transform:uppercase;
+            }
+            /*active can only come after hover*/
+            a:active{ 
+                /* the moment it is clicked */
+                color:red;
+                text-decoration: lowercase;
+            }
+            /* Universal selector applied to all html tag elements*/
+            * {color:black;}/*can try other color to view the diff*/ 
+
+        </style>
+    </head>
+    <body>
+        <p class="normal">This text paragraph to be presentation in normal style</p>
+        <p class="italic">This text paragraph to be presented in italic style</p>
+        <h1 class="italic">This heading will not be affected</h1>
+        <p class="large center">Using more than one class</p>
+        <b class="headline">This bold tag using headline class</b> 
+        <i class="headline">This italic tag using headline class</i>
+        Continue with Grouping selector 
+        <p class="headlines">This is a paragraph</p>
+        <p class="sublines">This is a paragraph</p>
+        <p class="infotext">This is a paragraph</p>
+        <b> 
+            <p> 
+                Trying context dependent selector for bold in paragraph
+            </p>
+        </b>
+        <a href="http://www.utm.my/" target="_blank">Click here</a>
+        <p style="color:purple;text-align:right;font-family: Arial;">
+            This paragraph applies inline style sheet.</p>
+    </body>
+</html>
