@@ -1,0 +1,34 @@
+<html>
+   <head>
+      <title>Relative Positioning</title>
+      <style>
+        
+         p {font-size: 1.3em;
+            font-family: verdana, arial, sans-serif
+         }
+         span { color:red;
+               font-size: .6em;/*here means 0.6 times the size of the current font*/
+         }
+         .super{position: relative; top: -1ex} /*here means -1ex from the top*/
+         .sub{position:relative; bottom: -1ex}
+         .shiftleft{position:relative;left: -1ex}
+         .shiftright{position:relative;right: -1ex}
+      </style>
+   </head>
+   <body>
+
+      <p>The text at the end of this sentence
+    <!--span doesn't mean anything but is useful when using together with global attributes-->
+      <span class = "super">is in superscript</span>.</p>
+
+      <p>The text at the end of this sentence
+      <span class = "sub">is in subscript</span>.</p>
+
+      <p>The text at the end of this sentence
+      <span class = "shiftleft">is shifted left</span>.</p>
+
+      <p>The text at the end of this sentence
+      <span class = "shiftright">is shifted right</span>.</p>
+
+   </body>
+</html>
