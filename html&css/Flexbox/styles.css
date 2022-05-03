@@ -1,0 +1,98 @@
+/*
+display: flex; is used to create a flex container 
+justify-content is used to define the horizontal alignment of items
+align-items is used to define the vertical alignment of items
+flex-direction is used to define the row / column of the items' directions
+row-reverse/column-reverse is used to flip items in order 
+align-self is used to vertically align individual items.
+flex is used to create a flexible boxex that can stretch and shrink. 
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-container{
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+/*Auto-margins eat up all the extra space in a flex container*/
+.signup{
+    margin-left: auto;
+}
+.links{
+    display: flex;
+    /*To make the div contents in left-right position*/
+    justify-content: flex-end;
+}
+.login{
+    margin-left: 20px;
+}
+.header-container{
+    color: #5995DA; 
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    width: 900px;
+    height: 300px; 
+    display: flex;
+    /*making horizontal alignment*/
+    justify-content: space-between;
+    /*making vertical alignment (center,flex-start,flex-end,stretch, baseline)*/
+    align-items: center;
+}
+.social,
+.subscribe{
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+.photo-grid{
+    width: 900px; 
+    display: flex; 
+    justify-content: center; 
+    /* can use flex-direction: row-reverse; to reverse the order*/
+    align-items: center;
+    flex-wrap: wrap;
+}
+.photo-grid-item{
+    border: 1px solid #fff; 
+    width: 300px; 
+    height: 300px;
+}
+.first-item{
+    order: 1;
+}
+.last-item{
+    order: -1;
+}
+.footer{
+    display: flex; 
+    justify-content: space-between;
+}
+.footer-item{
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    /*flex: 1; tells the items to stretch to match the width of .footer*/
+    flex: 1;
+}
+.footer-one,
+.footer-three{
+    flex: initial;
+    background-color: #5995DA;
+    width: 300px;
+}
