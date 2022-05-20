@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Window prompt</title>
+        <script type="text/javascript">
+            var name = window.prompt("Enter your name");//user input
+            document.write("Welcome\n"+name+"\n to JavaScript\n");
+            //modify variable
+            var age = window.prompt("Enter your age");
+            age=parseInt(age)+1;//parseInt() is used to convert string to int
+            document.write('Next year you are'+age+'years old\n');
+            //Using method
+            function prompter()
+            {var reply= prompt("Hey there, what is your hobby?","");
+            alert("My hobby: "+reply+"!");}
+            //In Condition
+            function confirmation(){
+                var ans = confirm("Leave this page?")
+                if(ans){
+                    alert("Bye bye"); 
+                    window.location = "http://www.google.com/";
+                }else{
+                    alert("Thanks for sticking around!")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="prompter()" value="Say my hobby!">
+        <br>
+        <input type="button" onclick="confirmation()" value="Leave this page">
+    </body>
+</html>

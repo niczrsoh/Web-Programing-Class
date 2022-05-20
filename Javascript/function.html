@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>My first function</title>
+        <script>
+            //basic function
+            function message(){
+                alert('This alert box was called with the onload event');
+            }
+            //advance function
+            function calculateTheDiscount(){
+                var itemPrice = 120.55;
+                var discountRate = 0.20;
+                var discountAmount = itemPrice * discountRate;
+                var netPrice = itemPrice - discountAmount;
+                var sentence1 = "Item Price: $"+itemPrice+"<br>";
+                var sentence2 = "Discount: $"+discountAmount+"<br>";
+                var sentence3 = "Net Price: $"+netPrice+"<br>";
+                document.write(sentence1);
+                document.write(sentence2);
+                document.write(sentence3);
+            }
+        </script>
+    </head>
+    <body onload="message()">
+    <input type="button" onClick="message()" value="CLICK ME!">
+    <br>
+    <script>
+        calculateTheDiscount();
+    </script>
+    </body>
+</html>
