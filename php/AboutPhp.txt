@@ -1,0 +1,7 @@
+PHP - Hypertext Pre-processor  
+executed on server   
+create , open, read, write and close files on server
+can send and receive cookies and collect data  
+add, delete and modify data in your database
+can restrict users to access some web pages on the website
+can encrypt data 
