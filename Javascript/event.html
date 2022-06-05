@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+        <img src="facebook.jpg" alt="fb" onmouseover="bigImg(this)" onmouseout="normImg(this)">
+        <br><br><br><br>
+        <input type="text" id="MyInput" onfocus="backgroundColor(this)" onblur="capital(this)">
+        <script>
+            function backgroundColor(x){
+                x.style.background = "red";
+            }
+            function capital(x){
+                x= document.getElementById("MyInput");
+                x.value = x.value.toUpperCase();
+            }
+            function bigImg(x){
+                x.style.width = 1000;
+                x.style.height = 1000;
+            }
+            function normImg(x){
+                x.style.width = 300;
+                x.style.height =300;
+            }
+        </script>
+
+
+
+    </body>
+
+</html>

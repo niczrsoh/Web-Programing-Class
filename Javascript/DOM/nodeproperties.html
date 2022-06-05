@@ -1,0 +1,16 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="myDiv">This is a div element.</div>
+        <script>
+            var x = document.getElementById("myDiv").firstChild;
+            var txt="";
+            txt += "The node name: "+x.nodeName+"<br>";
+            txt += "The node value: "+x.nodeValue+"<br>";
+            txt += "The node type: "+x.nodeType+"<br>";
+            document.write(txt);
+        </script>
+    </body>
+</html>
