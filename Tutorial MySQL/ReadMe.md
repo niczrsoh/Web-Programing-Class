@@ -2,7 +2,6 @@
 This MYSQL is using phpMyAdmin website from xampp
 
 //mysqli_connect("","",""), mysqli_query($con,"SQL statement") , mysqli_select_db($con,"db name") , mysqli_error(), mysqli_close($con) ,mysqli_fetecg_array(SQL query)  
-<?php
 // 1. Make connection using mysqli_connect("hostname","username","pw");
    $con = mysqli_connect("localhost","root","");
 // 2. check for the connection 
@@ -39,4 +38,3 @@ while($row = mysqli_fetch_array($sql)){
     echo $row['FirstName']+" "+$row['LastName'];
     echo "<br />"
 }
-?>
