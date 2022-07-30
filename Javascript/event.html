@@ -3,8 +3,24 @@
     <body>
         <img src="facebook.jpg" alt="fb" onmouseover="bigImg(this)" onmouseout="normImg(this)">
         <br><br><br><br>
-        <input type="text" id="MyInput" onfocus="backgroundColor(this)" onblur="capital(this)">
+        <input type="text" id="MyInput" onfocus="backgroundColor(this)" onblur="capital(this)" onSelect="alertText()">
+        <br><br><br>
+        <select id="mySelect" onchange="myCar()">
+            <option value="Audi">Audi</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Toyota">Toyota</option>
+        </select>
+
+        <p id="displayCar"></p>
         <script>
+            function alertText(){
+                alert("You have selected this text!");
+            }
+            function myCar(){
+                x= document.getElementById("mySelect").value;
+                document.getElementById("displayCar").innerHTML="Chosen car is "+x;
+            }
             function backgroundColor(x){
                 x.style.background = "red";
             }

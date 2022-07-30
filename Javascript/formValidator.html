@@ -1,0 +1,58 @@
+<html>
+<script type="text/javascript">
+    function formValidator() {
+        var name = document.getElementById("name");
+        var ic = document.getElementById("ic");
+        var address = document.getElementById("address");
+        var year = document.getElementById("year");
+        if(isAlphabet(name)){
+            if(isNumeric(year)){
+                if(isAlphaNumeric(address)){
+                return true;}}
+        }
+    }
+    function isAlphaNumeric(elem){
+        var alphaNumbers=/^[0-9a-zA-Z]+$/;
+        if(elem.value.match(alphaNumbers)){
+            return true;
+        }else{
+            alert("Please eneter only alphabets or numbers in the address field !");
+            elem.focus();
+            return false;
+        }
+    }
+    function isAlphabet(elem){
+        var alphabets=/^[a-zA-Z]+$/;
+        if(elem.value.match(alphabets)){
+            return true;
+        }else{
+            alert("Please enter only alphabets for names!");
+            elem.focus();
+            return false;
+        }
+    }
+    function isNumeric(elem){
+        var numerics=/^[0-9]+$/;
+        if(elem.value.match(numerics)){
+            return true;
+        }else{
+            alert("Please enter only numbers for years!");
+            elem.focus();
+            return false;
+        }
+    }
+</script>
+<body>
+    <form onsubmit='return formValidator()'>
+        <span >Name: </span>
+        <input type="text" id="name" ><br>
+        <span >IC no: </span>
+        <input type="text" id="ic"><br>
+        <span >Address: </span>
+        <input type="text" id="address" ><br>
+        <span >Year: </span>
+        <input type="text" id="year" ><br>
+        <input type="submit" value="SUBMIT"/>
+    </form>
+</body>
+</html>

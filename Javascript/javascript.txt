@@ -1,0 +1,8 @@
+mostly used term 
+1. confirm() -> result in true/ false
+2. prompt()/window.prompt() -> result in the input by user  
+3. window.location="../../../../" -> move to the window location
+4. alert() -> result in the alrt dialog 
+5. document.getElementById("...").appendChild(mytable);
+6. document.createElement('tr');
+7. querySelector('...')
