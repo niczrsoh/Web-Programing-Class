@@ -1,0 +1,82 @@
+<html>
+    <!--
+    input type can be text,checkbox,radio,select,textarea,password,button,Submit,Reset,hidden,file,image
+    for input:
+    The type attribute specifies the type of user input
+    The name attribute gives an identifier to the input data
+    The size attribute specifies the length of the input field
+    The value attribute specifies an initial value for the text-->
+    <head>
+        <title>Simple form</title>
+    </head>
+    <body>
+        <form>
+            UserName: <br>
+            <input type="text" name="userName" size="25"><br> <!--default size will be 20-->
+            Password: <br>
+            <input type="password" name="password" size="25"><br>
+        </form>
+        <form>
+            <!-- normally used for information that has ald been entered by user-->
+            Hidden UserName: <br>
+            <input type="hidden" name="Login" size="25"><br>
+        </form>
+        <!--Text area for address field-->
+        <form action="">
+            <h4>Enter Your Full Address</h4>
+            <Textarea name="address" rows="5" cols="80"
+            > Type your address here </Textarea>
+        </form>
+        <!-- List box for single selection -->
+        <form action="">
+            <h4>Select your payment method</h4>
+            <SELECT name="credit card type"> 
+                <option value="MC">Master Card</option>
+                <option value="visa">Visa</option>
+                <option value="amex">American Express</option>
+            </SELECT>
+            <br><br>
+            <input type="Submit">
+        </form>
+        <!-- List box for multiple selections -->
+        <form acttion="">
+            <h4>Select multiple languages</h4>
+            <SELECT name="Languages" MULTIPLE>
+                <option value="c++">C++</option>
+                <option selected value="Java">Java</option>
+                <option value="Pyt">Python</option>
+            </SELECT>
+        </form>
+        <!-- radio button-->
+        <form action="">
+            <h4>Radio buttons</h4>
+            <input type="radio" name="Credit Card" value="mc">Master Card
+            <input type="radio" name="Credit Card" value="vs">Visa
+            <input type="radio" name="Credit Card" value="ae">American Express
+        </form>
+        <!-- check box -->
+        <form action="">
+            <h4>Checkboxes</h4>
+            <input type="checkbox" name="PL" value="cpp" checked>C++
+            <input type="checkbox" name="PL" value="jv" checked>Java
+            <input type="checkbox" name="PL" value="pyt" checked>Python
+        </form>
+        <!-- type of buttons -->
+        <form action="">
+            Type something:
+            <input type="text">
+            <br>
+            <input type="submit" name="Submit" value="submit">
+            <input type="reset" name="Reset" value="reset">
+            <input type="button" name="alert dialog" value="Alert Dialog" onclick="alert('how are you?')">
+        </form>
+        <!-- Number input -->
+        <form action="">
+            Select any digit from 1 to 5 only: <br>
+            <input type="number" min="1" max="5"><br>
+            <input type="submit" name="Submit">
+        </form>
+
+
+    </body>
+</html>

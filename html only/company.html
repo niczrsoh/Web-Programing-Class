@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Form to fill</title>
+    </head>
+    <body>
+        <form action="">
+        <table style="width:50%">
+            <tr><td>Username:</td><td><input type="text" name="username"></td> </tr>
+            <tr><td>Password:</td><td><input type="password" name="password"></td></tr>
+            <tr><td>City of Employment:</td><td><input type="text" name="city"></td></tr>
+            <tr><td>Web Server:</td><td>
+                <Select name="Web Server">
+                <Option selected value="choose">-- Choose a Server --</Option> 
+                <Option value="apache">Apache HTTP Server</Option>
+                <Option value="Sun Java">Sun Java System Web Server</Option>
+                <Option value="Microsoft">Microsoft Internet Information Services</Option>
+            </Select></td></tr>
+            <tr><td>
+            Please specify your role: </td>
+            <td>
+            <input type="radio" name="role" value="Admin">Admin
+            <br>
+            <input type="radio" name="role" value="Engineer">Engineer
+            <br>
+            <input type="radio" name="role" value="Manager">Manager
+            <br>
+            <input type="radio" name="role" value="Guest">Guest
+            <br></td></tr>
+            <tr><td>Signle Sign-on to the following</td>
+            <td>
+           
+                <input type="checkbox" name="sign-on" value="mail">Mail<br>
+                <input type="checkbox" name="sign-on" value="payroll">Payroll<br>
+                <input type="checkbox" name="sign-on" value="self service">Self-Service
+            </td></tr>
+        </table>
+        <input type="button" name="login" value="Login">
+        <input type="reset" name="reset" value="Reset">
+        </form>
+    </body>
+</html>
