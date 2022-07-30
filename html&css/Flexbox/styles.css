@@ -53,8 +53,8 @@ flex is used to create a flexible boxex that can stretch and shrink.
 }
 .social,
 .subscribe{
-    align-self: flex-end;
-    margin-bottom: 20px;
+    /*default alignment along the cross axis*/
+    justify-content: flex-end;
 }
 .photo-grid-container{
     display: flex;
@@ -66,6 +66,7 @@ flex is used to create a flexible boxex that can stretch and shrink.
     justify-content: center; 
     /* can use flex-direction: row-reverse; to reverse the order*/
     align-items: center;
+    /*to control whether it should be single or double line*/
     flex-wrap: wrap;
 }
 .photo-grid-item{
@@ -74,6 +75,7 @@ flex is used to create a flexible boxex that can stretch and shrink.
     height: 300px;
 }
 .first-item{
+    /*order=> controls in order of children*/
     order: 1;
 }
 .last-item{
