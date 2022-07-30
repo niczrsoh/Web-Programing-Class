@@ -5,3 +5,8 @@ can send and receive cookies and collect data
 add, delete and modify data in your database
 can restrict users to access some web pages on the website
 can encrypt data 
+##### HOW TO EXECUTE PHP ?? ####
+1. copy the folder php to htdocs in xampp file in :C disk
+2. start xampp control and apache in xampp   
+3. type localhost/php/ in browser
+4. ensure that the php folder can be viewed at the web page
