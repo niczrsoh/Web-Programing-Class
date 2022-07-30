@@ -20,7 +20,7 @@ span:hover{
     color: red;
     text-decoration: red;
 }
-div.section.p:hover{
+div.section p:hover{
     background-color:red;
 }
 #title{
